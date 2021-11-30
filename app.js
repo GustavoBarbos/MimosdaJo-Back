@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express')
 require('./config/db.config')
 
@@ -123,4 +124,4 @@ app.get('/panodeprato',async (req,res) => {
 
 
 
-app.listen(5000, () => console.log('server listen 5000'))
+app.listen(process.env.PORT, () => console.log('server listen 5000'))
