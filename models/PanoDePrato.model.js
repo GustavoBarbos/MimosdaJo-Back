@@ -3,7 +3,7 @@ const { Schema, model } = require('mongoose')
 
 const PanoDePratoSchema = new Schema(
     {
-        name: { type: String, unique: true, required: true },
+        name: String,
         oldprice : Number,
         price: Number,
         image: String,
